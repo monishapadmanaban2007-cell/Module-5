@@ -1,5 +1,6 @@
 # Hierarchical Inheritance in Python
-
+## NAME: MONISHA P
+## REF NO: 25018486
 This Python project demonstrates **Hierarchical Inheritance** using a base class `Details` and two derived classes `Employee` and `Patient`. The program collects and displays details for both employees and patients.
 
 ## 🎯 Aim
@@ -31,6 +32,94 @@ To write a Python program that uses **Hierarchical Inheritance** to input and di
 5. Display collected information using class methods.
 
 ## Program
-Add code here
-## Sample Output
+class Details:
 
+    def __init__(self):
+    
+        self.name = input("Enter name: ")
+        
+        self.age = int(input("Enter age: "))
+
+    def getName(self):
+    
+        print("Name :", self.name)
+
+    def getAge(self):
+    
+        print("Age :", self.age)
+
+class Employee(Details):
+
+    def __init__(self):
+    
+        super().__init__()
+        
+        self.employee_id = input("Enter employee ID: ")
+        
+        self.department = input("Enter department: ")
+
+    def getEmployeeDetails(self):
+    
+        print("\n--- Employee Details ---")
+        
+        self.getName()
+        
+        self.getAge()
+        
+        print("Employee ID :", self.employee_id)
+        
+        print("Department :", self.department)
+
+class Patient(Details):
+
+    def __init__(self):
+    
+        super().__init__()
+        
+        self.patient_id = input("Enter patient ID: ")
+        
+        self.disease = input("Enter disease: ")
+
+    def getPatientDetails(self):
+    
+        print("\n--- Pa
+
+## Sample Output
+Enter Employee Information
+
+Enter name: Rahul
+
+Enter age: 30
+
+Enter employee ID: E101
+
+Enter department: HR
+
+Name : Rahul
+
+Age : 30
+
+Employee ID : E101
+
+Department : HR
+
+Enter Patient Information
+
+Enter name: Anitha
+
+Enter age: 25
+
+Enter patient ID: P205
+
+Enter disease: Fever
+
+
+Name : Anitha
+
+Age : 25
+
+Patient ID : P205
+
+Disease : Fever
+## Result
+Thus, a Python program demonstrating Hierarchical Inheritance using a base class Details and derived classes Employee and Patient was successfully written and executed.
