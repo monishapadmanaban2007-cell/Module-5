@@ -1,5 +1,6 @@
 # # Constructors in Python: Welcome Message with Student Name
-
+## NAME: MONISHA P
+## REF NO: 25018486
 ## 🎯 Aim
 To write a Python program that creates a **Student** class with a **default constructor** and a method to display a welcome message along with the student’s name provided by the user.
 
@@ -12,8 +13,29 @@ To write a Python program that creates a **Student** class with a **default cons
 
 ## 🧾 Program
 
-Add code here
+class Student:
+
+    def __init__(self):
+    
+        self.a = input("Enter the student name: ")
+
+    def show(self):
+    
+        print("This is non-parameterized constructor")
+        
+        print("Welcome", self.a)
+
+s = Student()
+
+s.show()
+
 
 ## Output
+Enter the student name: Monisha
+
+This is non-parameterized constructor
+
+Welcome Monisha
 
 ## Result
+Thus, a Python program using a default (non-parameterized) constructor to display a welcome message along with the student’s name was successfully written and executed.
